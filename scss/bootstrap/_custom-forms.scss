@@ -1,0 +1,24 @@
+.custom-select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.custom-range {
+  -webkit-appearance: none;
+  appearance: none;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  &::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  &::-ms-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+}
