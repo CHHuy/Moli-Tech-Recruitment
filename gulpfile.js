@@ -94,6 +94,7 @@ function scripts() {
     .pipe(babel({
       presets: ['@babel/env']
     }))
+    .pipe(uglify())
     .pipe(concat('app.min.js'))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(paths.scripts.dest))

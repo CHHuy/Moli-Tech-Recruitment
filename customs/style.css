@@ -12950,7 +12950,7 @@ fieldset:disabled a.btn {
   border-color: #fed136;
 }
 .btn-primary:hover {
-  color: #fff;
+  color: black;
   background-color: #fec810;
   border-color: #fec503;
 }
@@ -20609,7 +20609,7 @@ img::-moz-selection {
 }
 header.masthead {
   padding-top: 10.5rem;
-  padding-bottom: 8rem;
+  padding-bottom: 18rem;
   text-align: center;
   color: #fff;
   background-image: url("../assets/img/header-bg.jpg");
