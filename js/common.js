@@ -51,10 +51,44 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
       event.preventDefault();
     });
   }
+  function contact_form() {
+    $('#section-contact-form').submit(function(e) {
+      e.preventDefault();
+      var name = $('#name').val();
+      var email = $('#email').val();
+      var phone = $('#phone').val();
+      var message = $('#message').val();
+
+      var params = {
+        name : name,
+        email : email,
+        phone : phone,
+        message : message,
+      }
+      $.ajax({
+        type: 'post',
+        url: 'send-contact.php',
+        data: params,
+        dataType: 'json',
+        success: function(json){
+          if (json['res'] == 0) {
+            $('#success').html('<div class="alert alert-danger" role="alert">'+json['msg']+'</div>');
+          } else {
+            $('#success').html('<div class="alert alert-info" role="alert">'+json['msg']+'</div>');
+            $('#name').val('');
+            $('#email').val('');
+            $('#phone').val('');
+            $('#message').val('');
+          }
+        }
+      });
+    });
+  }
 
   function init() {
     scrollToAnchor();
     getBarwidth();
+    contact_form()
   }
 
   $(document).ready(function () {

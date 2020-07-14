@@ -33,7 +33,9 @@ const paths = {
   },
   scriptsCore: {
     src: [
-      'third_party/modernizr.min.js'
+      'third_party/modernizr.min.js',
+      'assets/mail/contact_me.js',
+      'assets/mail/jqBootstrapValidation.js'
     ],
     dest: 'dist/'
   },
