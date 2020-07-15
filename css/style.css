@@ -11106,6 +11106,18 @@ Footer
   align-items: center;
 }
 
+@media (max-width: 767.98px) {
+  .hiring-item {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hiring-item {
+    margin-bottom: 50px;
+  }
+}
+
 .hiring-item .hiring-icon i:hover {
   color: black;
 }

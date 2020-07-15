@@ -5,6 +5,12 @@
 }
 
 .hiring-item {
+  @include media-breakpoint-down(sm){
+    margin-bottom: 50px;
+  }
+  @include media-breakpoint-down(xs){
+    margin-bottom: 50px;
+  }
   .hiring-icon {
     i:hover {
       color: black;
